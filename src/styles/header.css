@@ -1,0 +1,42 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  /* border-bottom: 1px solid var(--grey-3); */
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: default;
+  font-size: var(--font-size-4);
+}
+
+.logo__pt1 {
+  font-weight: var(--font-weight-1);
+}
+
+.logo__pt2 {
+  font-weight: var(--font-weight-5);
+  font-style: italic;
+}
+
+.masterpieces__button,
+.random-lyrics__buttom {
+  cursor: pointer;
+  font-size: var(--font-size-9);
+  font-weight: var(--font-weight-5);
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--brand-2);
+}
+
+.masterpieces__button:hover,
+.random-lyrics__buttom:hover {
+  border-bottom: 5px solid var(--brand-1);
+  transition: all 250ms ease-in-out;
+}

@@ -36,7 +36,7 @@ export const getSongsParagraphsRequest = async (boolean, number) => {
     .get(
       `/lyrics?shouldRandomizeLyrics=${boolean}&numberOfParagraphs=${number}`
     ) // procurar objeto get query
-    .then((res) => console.log(res.data.lyrics))
+    .then((res) => res.data.lyrics)
     .catch((err) => console.log(err.message));
 
   return songsParagraphs;

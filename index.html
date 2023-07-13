@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ca2692ca00.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./src/scripts/index.js" type="module" defer></script>
 
     <link rel="stylesheet" href="/src/styles/index.css" />
 
-    <title>Document</title>
+    <title>randomly,t.swift</title>
   </head>
-  <body>
-    <h1>t swift api</h1>
 
-    <ul class="albums-cover"></ul>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="logo">
+          <span class="logo__pt1">randomly,</span>
+          <span class="logo__pt2">t.swift</span>
+        </h1>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="masterpieces__button">obras de arte</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <aside>
+    </aside> -->
+
+    <main class="main__lyrics-container container">
+      <button class="random-lyrics__button">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+
+      <div class="main__lyrics-outside">
+        <div class="main__lyrics-elements">
+          <div class="lyrics"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <ul class="albums-cover"></ul> -->
   </body>
 </html>

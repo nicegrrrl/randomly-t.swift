@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ca2692ca00.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/scripts/albums.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="/src/styles/albums.css" />
+    <title>albums</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="logo">
+          <span class="logo__pt1">randomly,</span>
+          <span class="logo__pt2">t.swift</span>
+        </h1>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="random-lyrics__buttom">letras aleatórias</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="albums__container">
+      <ul class="albums__list">
+        <li class="album">
+          <img
+            class="album__cover"
+            src="../assets/img/cover-speak-now-tv.webp"
+            alt="cover"
+          />
+        </li>
+        <li class="album">
+          <img
+            class="album__cover"
+            src="../assets/img/cover-evermore.jpg"
+            alt="cover"
+          />
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

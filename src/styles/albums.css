@@ -1,0 +1,19 @@
+@import url("./reset.css");
+@import url("./globalStyles.css");
+@import url("./header.css");
+
+.albums__list {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.album__cover {
+  cursor: pointer;
+  width: 400px;
+  height: 400px;
+  border-radius: 4px;
+}
