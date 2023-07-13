@@ -33,4 +33,3 @@ handleRandomLyricsButtonClick();
 // getSongsParagraphsRequest(true, 6);
 // getAllSongsRequest();
 // getSongInformation(3);
-// renderAlbumsCover(albums);
