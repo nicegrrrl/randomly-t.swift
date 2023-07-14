@@ -14,21 +14,31 @@
     <script src="../scripts/tailwindConfig.js" type="module"></script>
     <script src="../scripts/detailedAlbum.js" type="module" defer></script>
 
-    <link rel="stylesheet" href="../styles/detailedAlbum.css" />
+    <link rel="stylesheet" href="../styles/scrollbar.css" />
 
-    <title>Document</title>
+    <title></title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header__container container">
-        <h1 class="logo">
-          <span class="logo__pt1">randomly,</span>
-          <span class="logo__pt2">t.swift</span>
+  <body class="font-display text-gray-900">
+    <header class="header w-screen h-20">
+      <div
+        class="header__container max-w-[69.375rem] mx-auto my-0 h-full flex justify-between items-center"
+      >
+        <h1 class="logo cursor-default text-3xl">
+          <span class="logo__pt1 font-black">randomly,</span>
+          <span class="logo__pt2 font-light italic">t.swift</span>
         </h1>
         <nav class="navbar">
           <ul class="navbar__list flex gap-5">
-            <li class="random-lyrics__button">letras aleatórias</li>
-            <li class="masterpieces__button">obras de arte</li>
+            <li
+              class="random-lyrics__button cursor-pointer text-sm font-light uppercase border-b-[5px] border-b-yellow-200 hover:border-b-pink-400 transition-transform ease-in-out duration-150"
+            >
+              letras aleatórias
+            </li>
+            <li
+              class="masterpieces__button cursor-pointer text-sm font-light uppercase border-b-[5px] border-b-yellow-200 hover:border-b-pink-400 transition-transform ease-in-out duration-150"
+            >
+              obras de arte
+            </li>
           </ul>
         </nav>
       </div>

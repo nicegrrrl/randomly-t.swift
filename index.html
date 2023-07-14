@@ -5,39 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script
       src="https://kit.fontawesome.com/ca2692ca00.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/tailwindConfig.js" type="module"></script>
     <script src="./src/scripts/index.js" type="module" defer></script>
-
-    <!-- <link rel="stylesheet" href="/src/styles/index.css" /> -->
 
     <title>randomly,t.swift</title>
   </head>
 
-  <body>
-    <header class="header">
-      <div class="header__container container">
-        <h1 class="logo">
-          <span class="logo__pt1">randomly,</span>
-          <span class="logo__pt2">t.swift</span>
+  <body class="font-display text-gray-900">
+    <header class="header w-screen h-20">
+      <div
+        class="header__container max-w-[69.375rem] mx-auto my-0 h-full flex justify-between items-center"
+      >
+        <h1 class="logo cursor-default text-3xl">
+          <span class="logo__pt1 font-black">randomly,</span>
+          <span class="logo__pt2 font-light italic">t.swift</span>
         </h1>
         <nav class="navbar">
           <ul class="navbar__list flex gap-5">
-            <li class="masterpieces__button">obras de arte</li>
+            <li
+              class="masterpieces__button cursor-pointer text-sm font-light uppercase border-b-[5px] border-b-yellow-200 hover:border-b-pink-400 transition-transform ease-in-out delay-100"
+            >
+              obras de arte
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main__lyrics-container container">
-      <button class="random-lyrics__button">
+    <main
+      class="main__lyrics-container max-w-[69.375rem] mx-auto my-0 w-[50rem] max-w-3/5 h-[90vh] flex justify-center items-center"
+    >
+      <button class="random-lyrics__button text-2xl pr-5 hover:text-pink-400">
         <i class="fa-solid fa-shuffle"></i>
       </button>
 
-      <div class="main__lyrics-outside">
-        <div class="main__lyrics-elements">
+      <div class="main__lyrics-outside border-l-[6px] border-yellow-200">
+        <div
+          class="main__lyrics-elements h-full flex px-8 py-5 text-2xl leading-relaxed border-l-[6px] border-l-pink-400"
+        >
           <div class="lyrics"></div>
         </div>
       </div>

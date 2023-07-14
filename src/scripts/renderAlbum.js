@@ -22,7 +22,7 @@ const renderAlbumCard = (album) => {
   title.innerText = album.title;
   releasedYear.innerText = album.releasedYear;
 
-  if (album.wasStolen) {
+  if (album.wasStolen && album.hasTV) {
     const showStolenVersion = document.querySelector(
       ".stolen-version__button--show"
     );
