@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://kit.fontawesome.com/ca2692ca00.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/tailwindConfig.js" type="module"></script>
+    <script src="../scripts/detailedAlbum.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="../styles/detailedAlbum.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="logo">
+          <span class="logo__pt1">randomly,</span>
+          <span class="logo__pt2">t.swift</span>
+        </h1>
+        <nav class="navbar">
+          <ul class="navbar__list flex gap-5">
+            <li class="random-lyrics__button">letras aleatórias</li>
+            <li class="masterpieces__button">obras de arte</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      class="album__container max-w-[1100px] h-[90vh] mx-auto my-0 flex justify-center items-center gap-24"
+    >
+      <section class="album__info h-[600px] flex flex-col gap-2">
+        <!-- <div class="album__info-top flex justify-between">
+          <div
+            class="stolen-version__button--show hidden flex justify-start items-center gap-2 cursor-pointer hover:text-pink-500"
+          >
+            <img
+              class="scooter__img w-[22px]"
+              src="../assets/img/scooter.png"
+              alt=""
+            />
+            <p class="stolen-version__button--text text-xs">
+              VER VERSÃO <span class="stolen__span">ROUBADA</span>
+            </p>
+          </div>
+          <div
+            class="listen-spotify hidden flex justify-end items-center gap-2 cursor-pointer hover:text-pink-500"
+          >
+            <span class="listen-spotify__text text-xs">OUVIR NO SPOTIFY</span>
+            <img
+              class="listen-spotify__logo w-[22px]"
+              src="../assets/img/spotify.png"
+              alt="spotify logo"
+            />
+          </div>
+        </div> -->
+        <img class="album__info-cover w-[500px]" src="" alt="album cover" />
+        <div
+          class="album__info-bottom flex flex-col justify-center items-end gap-2"
+        >
+          <h2 class="album__title text-4xl font-bold cursor-default"></h2>
+          <span class="tv-album__released-year text-base cursor-default"></span>
+          <span class="album__released-year text-base cursor-default"></span>
+        </div>
+      </section>
+      <section
+        class="album__tracklist px-[25px] py-[20px] flex flex-col gap-6 w-[500px] h-[600px]"
+      >
+        <h3 class="album__tracklist--title text-xl">músicas</h3>
+        <ul class="album__tracklist--songs text-base flex flex-col gap-1"></ul>
+      </section>
+    </main>
+  </body>
+</html>

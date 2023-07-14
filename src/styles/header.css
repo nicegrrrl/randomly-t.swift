@@ -27,7 +27,7 @@
 }
 
 .masterpieces__button,
-.random-lyrics__buttom {
+.random-lyrics__button {
   cursor: pointer;
   font-size: var(--font-size-9);
   font-weight: var(--font-weight-5);
@@ -36,7 +36,7 @@
 }
 
 .masterpieces__button:hover,
-.random-lyrics__buttom:hover {
+.random-lyrics__button:hover {
   border-bottom: 5px solid var(--brand-1);
   transition: all 250ms ease-in-out;
 }

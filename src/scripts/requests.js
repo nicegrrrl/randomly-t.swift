@@ -4,7 +4,7 @@ import { api } from "../scripts/axios.js";
 export const getAllAlbumsRequest = async () => {
   const allAlbums = await api
     .get(`/albums`)
-    .then((res) => console.log(res.data))
+    .then((res) => res.data)
     .catch((err) => console.log(err.message));
 
   return allAlbums;
@@ -14,7 +14,7 @@ export const getAllAlbumsRequest = async () => {
 export const getSongsWithinAnAlbumRequest = async (albumId) => {
   const albumSongs = await api
     .get(`albums/${albumId}`)
-    .then((res) => console.log(res.data))
+    .then((res) => res.data)
     .catch((err) => console.log(err.message));
 
   return albumSongs;
@@ -56,7 +56,7 @@ export const getAllSongsRequest = async () => {
 export const getSongInformation = async (songId) => {
   const songInformation = await api
     .get(`/songs/${songId}`)
-    .then((res) => console.log(res.data))
+    .then((res) => res.data)
     .catch((err) => console.log(err.message));
 
   return songInformation;
